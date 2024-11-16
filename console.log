@@ -1,0 +1,1217 @@
+2024-11-13 18:45:13 | INFO | main.py | <module>: 24 | start train worker
+2024-11-13 18:45:15 | INFO | train_prepare.py | setup: 18 | ddp set up rank:0/2
+2024-11-13 18:45:15 | INFO | train_prepare.py | setup: 21 | master addr:localhost:12355
+2024-11-13 18:45:15 | INFO | train_prepare.py | setup: 18 | ddp set up rank:1/2
+2024-11-13 18:45:15 | INFO | train_prepare.py | setup: 21 | master addr:localhost:12355
+2024-11-13 18:45:17 | INFO | train_prepare.py | setup: 24 | ddp set up rank:0/2 over
+2024-11-13 18:45:17 | DEBUG | train.py | train: 52 | start train  rank0  world_size 2
+2024-11-13 18:45:17 | DEBUG | train.py | train: 56 | init model init
+2024-11-13 18:45:18 | INFO | train_prepare.py | setup: 24 | ddp set up rank:1/2 over
+2024-11-13 18:45:18 | DEBUG | train.py | train: 52 | start train  rank1  world_size 2
+2024-11-13 18:45:18 | DEBUG | train.py | train: 56 | init model init
+2024-11-13 18:45:19 | DEBUG | train.py | train: 60 | init model over
+2024-11-13 18:45:19 | DEBUG | train.py | train: 62 | device : cuda:1
+2024-11-13 18:45:19 | INFO | lbs.py | __init__: 13 | LSR init over 
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 14 | init dataset ...
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 15 | data_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/exam_dataset/dataset.jsonl
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 16 | num_class : 10
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 17 | image_process : process_image
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 18 | label_process : _one_hot
+2024-11-13 18:45:19 | DEBUG | train.py | train: 60 | init model over
+2024-11-13 18:45:19 | DEBUG | train.py | train: 62 | device : cuda:0
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 33 | SenceDataset init over
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 34 | SenceDataset , datas count : 4 , labels num : 4
+2024-11-13 18:45:19 | INFO | lbs.py | __init__: 13 | LSR init over 
+2024-11-13 18:45:19 | DEBUG | train.py | train: 73 | init dataset over
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 14 | init dataset ...
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 15 | data_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/exam_dataset/dataset.jsonl
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 16 | num_class : 10
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 17 | image_process : process_image
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 18 | label_process : _one_hot
+2024-11-13 18:45:19 | DEBUG | train.py | train: 76 | init dataloader over
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 33 | SenceDataset init over
+2024-11-13 18:45:19 | INFO | scene_classify.py | __init__: 34 | SenceDataset , datas count : 4 , labels num : 4
+2024-11-13 18:45:19 | DEBUG | train.py | train: 73 | init dataset over
+2024-11-13 18:45:19 | DEBUG | train.py | train: 76 | init dataloader over
+2024-11-13 18:45:19 | DEBUG | status_lr.py | __init__: 22 | self.points [0, 5, 8, 12]
+2024-11-13 18:45:19 | DEBUG | status_lr.py | __init__: 23 | self.phase {5: 0.05, 8: 0.025, 12: 0.0125, 0: 0.05}
+2024-11-13 18:45:19 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:19 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 0
+2024-11-13 18:45:19 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 0
+2024-11-13 18:45:19 | DEBUG | status_lr.py | __init__: 22 | self.points [0, 5, 8, 12]
+2024-11-13 18:45:19 | DEBUG | status_lr.py | __init__: 23 | self.phase {5: 0.05, 8: 0.025, 12: 0.0125, 0: 0.05}
+2024-11-13 18:45:19 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:19 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 0
+2024-11-13 18:45:19 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 0
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:19 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:19 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:19 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:19 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:19 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:19 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:19 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:19 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:19 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:19 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.630501925945282
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.630501925945282
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.5265649557113647
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.5265649557113647
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.4007234573364258
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.4007234573364258
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 0 scheduler.lr 0.01
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 1
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.8213356137275696
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.8213356137275696
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 0 scheduler.lr 0.01
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 1
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.00018878573609981686
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.00018878573609981686
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.004150707740336657
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.004150707740336657
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 1 scheduler.lr 0.05500000000000001
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 2
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 1 scheduler.lr 0.05500000000000001
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 2
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 2 scheduler.lr 0.1
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 3
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 3
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 2 scheduler.lr 0.1
+2024-11-13 18:45:23 | DEBUG | gradual_warmup.py | get_lr: 24 | GradualWarmupScheduler last_epoch : 3
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 3
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 3 scheduler.lr 0.05
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 4
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 3 scheduler.lr 0.05
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 4
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 4 scheduler.lr 0.05
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 5
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 4 scheduler.lr 0.05
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 5
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 5 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 6
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 5 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 6
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 6 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 7
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 6 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 7
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 7 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 8
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 7 scheduler.lr 0.025
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 8
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 8 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 9
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 8 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 9
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 9 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 9 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 10
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 10 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 11
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [1]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000002.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 624x593
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 10 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 11
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [0]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000001.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 993x1241
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [2]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000003.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 640x635
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 20 | classes : 10
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 21 | labels [3]
+2024-11-13 18:45:23 | DEBUG | lbs.py | _one_hot: 32 | one_hot.shape torch.Size([10])
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 25 | image_path : /home/hezhipeng/train_workspace/scene_trainworker/exam_images/000004.jpg
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 26 | mean: [0.485, 0.456, 0.406]
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 27 | std: [0.229, 0.224, 0.225]
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:0 predictions.device cuda:0
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 33 | Original image size: 1080x1080
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 0 one step over 
+2024-11-13 18:45:23 | DEBUG | image_prepare.py | process_image: 57 | image_tensor.shape : torch.Size([3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 11 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 12
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 11 | step train input.shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 12 | step train label.shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 45 | input.shape : torch.Size([1, 3, 128, 128]) 
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 49 | resnet input shape : torch.Size([1, 3, 128, 128])
+2024-11-13 18:45:23 | DEBUG | bodys.py | forward: 51 | resnet output shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 18 | input shape : torch.Size([1, 512, 1, 1])
+2024-11-13 18:45:23 | DEBUG | heads.py | forward: 21 | output shape : torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | train.py | forward: 48 | output.shape : torch.Size([1, 10]) 
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 18 | loss func predictions: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 19 | loss func targets: torch.Size([1, 10])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 23 | loss targets device cuda:1 predictions.device cuda:1
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 26 | loss.shape : torch.Size([1])
+2024-11-13 18:45:23 | DEBUG | classify_loss.py | one_hot_cross_entropy_loss: 29 | mean_loss: 0.0
+2024-11-13 18:45:23 | DEBUG | classify_train_step.py | classify_step_train: 17 | step train loss : 0.0
+2024-11-13 18:45:23 | DEBUG | train.py | train: 98 | rank 1 one step over 
+2024-11-13 18:45:23 | DEBUG | train.py | train: 100 | epoch : 11 scheduler.lr 0.0125
+2024-11-13 18:45:23 | DEBUG | status_lr.py | step: 41 | PhaseReductionScheduler step
+2024-11-13 18:45:23 | DEBUG | status_lr.py | get_lr: 34 | PhaseReductionScheduler last_epoch : 12
