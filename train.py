@@ -27,7 +27,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 from train_step.classify_train_step import classify_step_train
 import os
 import time
-
+from data_process.kaggle_CMI_prepare import read_parquet_file,read_data_dictionary , processor_train_data_set
 
 seed = 42  # 可以换成你想要的种子值
 torch.manual_seed(seed)
@@ -148,4 +148,21 @@ def train(rank, world_size):
 
     logger.debug(f"model body : {model.module.backbone}")
     cleanup()
+
+class Trainner:
+    def __init__(self, rank, world_size):
+        self.rank = rank
+        self.world_size = world_size
+
+    def train(self):
+        logger.debug(f"train a model start ... rank{self.rank+1}/{self.world_size}")
+
+        import os
+        root = "D:\dataset\CMI"
+        dicitionary = "data_dictionary.csv"
+        file_path = r"D:\dataset\CMI\series_test.parquet\id=001f3379\part-0.parquet"
+        processor_train_data_set(os.path.join(root, "train.csv"))
+
+        pass
+
 
